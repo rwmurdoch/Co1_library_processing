@@ -21,9 +21,9 @@ The general outline of the processing pipeline, from a data processing perspecti
 
 1. Amplicon library data was processed using the Qiime2-2018.11 environment.
 2. Primers were trimmed from reads using cutadapt.
-3. A custom sklearn feature classifier was trained using all BOLD Co1 database entries, downloaded in June, 2018.
-4. Actual sequence variants were determined using dada2 with forward and reverse truncation length of 140bp
-5. ASVs shorter than 147bp or longer than 167bp were removed.
-6. ASVs occurring fewer than twice across all samples were removed.
+3. Actual sequence variants were determined using dada2 with forward and reverse truncation length of 140bp
+4. ASVs shorter than 147bp or longer than 167bp were removed.
+5. ASVs occurring fewer than twice across all samples were removed.
+6. ASVs were taxnomically placed using a custom sklearn feature classifier was trained using all BOLD Co1 database entries, downloaded in June, 2018.
 
 
